@@ -8,7 +8,7 @@ python:
   - 3.6
 # command to install dependencies
 before_install:
+  - pip install "django<2"
   - make install
-  - if [[ $TRAVIS_PYTHON_VERSION == 2.7 ]]; then pip install "django<2"; fi
 # command to run tests
 script: pytest test_django_image.py
