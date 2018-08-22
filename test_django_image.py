@@ -9,6 +9,7 @@ FILE_NAME = 'img.webp'
 here = os.path.dirname(__file__)
 file_path = os.path.join(here, FILE_NAME)
 
+
 def test_webp_parse_error():
     """
     Webp file from douban.com, displays in browser well,
